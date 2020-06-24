@@ -26,6 +26,7 @@ class String
     end
   end
 
+=begin 
   def count_sentences
     if self.end_with?(".", "?", "!")
       self.split.count
@@ -33,5 +34,9 @@ class String
     else
       self.split.length
     end
+=end   
+  def count_sentences
+   new_array = self.split(/[.?!]/).reject {|string| string.empty?}
+    return new_array.length
   end
 end
