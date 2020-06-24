@@ -31,8 +31,7 @@ class String
       self.split.count
     elsif self.end_with? != self.end_with?(".", "?", "!")  
       self.count
-    else
-      self.split.count
+   
     end
   end
 end
