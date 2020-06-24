@@ -30,7 +30,7 @@ class String
     if self.end_with?(".", "?", "!")
       self.split.count
     else
-      self.split.count
+      self.split.length
     end
   end
 end
